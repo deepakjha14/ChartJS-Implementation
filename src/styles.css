@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+#content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.container{
+    background-color: orange;
+    height:7em;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Arial", "sans-serif";
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+button {
+    width: 100px;
+    background: orange;
+    border: 1px solid darkred;
+    margin-right: 10px;
+
+    box-shadow: 1px 1px 3px #333;
+}
+
+table {
+    width: 100%;
+}
+table td {
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}

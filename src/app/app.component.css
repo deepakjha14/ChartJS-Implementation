@@ -1,0 +1,61 @@
+/* Header */
+.header {
+    display: flex;
+    background: orange;
+    padding: 30px 20px;
+}
+
+.header .logo h1 {
+    margin: 3px 0;
+}
+.header .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Left Section */
+
+.left-section {
+    flex: 1;
+    margin-right: 20px;
+}
+.left-section .header {
+    display: flex;
+    height: 30px;   
+}
+
+.left-section .header button {
+    height: 25px;
+}
+.left-section .header > .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+table th {
+    background: #ccc;
+    padding: 5px;
+}
+.totals td {
+    border-top: 3px solid #ccc;
+}
+
+.legend {
+    width: 30px;
+    height: 16px;
+}
+
+/* Right Section */
+.right-section {
+    width: 300px;
+    background: #ccc;
+}
+.right-section .chart {
+    height: 300px;
+}
+
+.right-section .help-label {
+    padding: 10px;
+}

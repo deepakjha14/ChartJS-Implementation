@@ -1,0 +1,48 @@
+<div id="content row">
+    <div class="left-section col-md-6 col-sm-12 col-xs-12">
+        <div class="header">
+            <strong>Accounts</strong>
+
+            <div class="actions">
+                <button (click)="addAccount()">Add Account</button>
+                <button (click)="refreshPi()">Refresh</button>
+            </div>
+        </div>
+
+        <table class="table-bordered">
+            <tr>
+                <th>Name</th>
+                <th>Market Value</th>
+                <th>Cash</th>
+                <th>Legend</th>
+            </tr>
+
+            <tr *ngFor="let row of rows">
+                <td>{{ row.name }}</td>
+                <td>{{ row.marketValue | currency:'USD':true:'2.2-4' }}</td>
+                <td>{{ row.cash | currency:'USD':true:'2.2-4' }}</td>
+                <td>
+                    <div class="legend" [ngStyle]="{'background-color': row.legend }"></div>
+                </td>
+            </tr>
+
+            <tr class="totals">
+                <td></td>
+                <td>
+                    <strong>{{grandTotal.marVal | currency:'USD':true:'2.2-4' }}</strong>
+                </td>
+                <td>
+                    <strong>{{ grandTotal.cash | currency:'USD':true:'2.2-4' }}</strong>
+                </td>
+                <td></td>
+            </tr>
+
+
+        </table>
+    </div>
+
+    <div class="right-section col-md-6 col-sm-12 col-xs-12">
+        <app-account-chart></app-account-chart>
+    </div>
+
+</div>
